@@ -1,5 +1,7 @@
 **Multi-Format Autonomous AI System**
+
 **Overview**
+
 The Multi-Format Autonomous AI System processes files of different formats (emails, JSON, PDFs) and automatically classifies, extracts relevant details, and takes necessary actions, including triggering API calls based on tone and urgency. It maintains an audit trail using SQLite for logging all actions.
 
 Features
