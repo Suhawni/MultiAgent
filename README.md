@@ -20,27 +20,46 @@ Database Logging (Persist audit logs in SQLite)
 Streamlit UI (Upload files, view logs, inspect API actions)
 
 Project Architecture
+
 📦 Multi-Format Autonomous AI System
+
 │
 ├── app/
 │   ├── main.py               # FastAPI server, API endpoints, request handling
+
 │   ├── classifier_agent.py   # Identifies file type and intent
+
 │   ├── email_agent.py        # Processes email content (tone, urgency, keywords)
+
 │   ├── json_agent.py         # Validates JSON schema, extracts anomalies
+
 │   ├── pdf_agent.py          # Extracts PDF invoice total, detects compliance mentions
+
 │   ├── action_router.py      # Routes actions (CRM escalation, compliance alerts)
+
 │   ├── memory_store.py       # Persistent SQLite logging (metadata, agent outputs, alerts)
+
 │   └── utils/
+
 │       ├── file_parser.py    # Detects format and parses content
+
 │       ├── tone_detector.py  # Identifies email tone (angry, polite, escalation)
+
 │       ├── schema_validator.py  # Validates JSON schema
+
 │       ├── pdf_utils.py      # Extracts relevant details from PDFs
+
 │
 ├── data/                     # Sample files (emails, JSONs, PDFs)
+
 │
+
 ├── requirements.txt          # Dependencies for installation
+
 ├── streamlit_app.py          # Streamlit UI interface
+
 ├── memory_logs.db            # SQLite database storing logs
+
 └── README.md                 # Documentation
 
 ---
