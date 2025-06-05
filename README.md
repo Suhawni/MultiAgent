@@ -122,5 +122,4 @@ GET Retrieves agent processing outputs
 
 /logs/alerts
 GET Retrieves alerts recorded in the database
-![image (2)](https://github.com/user-attachments/assets/d632fa37-99e0-4704-8fbf-58d1ccf21d28)
 
